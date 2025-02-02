@@ -1,0 +1,279 @@
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background-color: #000000;
+  min-height: 100vh;
+  display: grid;
+}
+
+header {
+  position: relative;
+}
+
+#bannerimage {
+  height: 250px;
+  width: 100%;
+  background-size: cover;
+  box-shadow: 0.1px 0.1px 10px 0.1px rgba(180, 180, 180, 0.651);
+}
+
+#pfp {
+  height: 170px;
+  position: absolute;
+  right: 0;
+  left: 0;
+  border: #000000;
+  border-style: solid;
+  margin-top: 40px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#kuvat {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    'garf1 garf2'
+    'garf3 garf4'
+    'garf5 garf6';
+}
+#garf1 {
+  grid-area: garf1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#garf2 {
+  grid-area: garf2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#garf3 {
+  grid-area: garf3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#garf4 {
+  grid-area: garf4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#garf5 {
+  grid-area: garf5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#garf6 {
+  grid-area: garf6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.karvinen {
+  border: 10px solid #696969;
+  border-top-color: #a5a5a5;
+  border-bottom-color: #3f3f3f;
+  box-shadow: 0.1px 0.1px 10px 0.1px rgba(180, 180, 180, 0.35);
+}
+
+.img-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.kuvateksti {
+  width: 21.55em;
+  margin-bottom: 4em;
+}
+
+nav {
+  position: sticky;
+  background-color: #000000;
+  top: 0;
+  border: 10px solid #696969;
+  border-top-color: #a5a5a5;
+  border-bottom-color: #3f3f3f;
+  box-shadow: 0.1px 0.1px 10px 0.1px rgba(180, 180, 180, 0.35);
+  text-align: center;
+  margin-top: 10px;
+}
+.chapters {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 22pt;
+  margin-top: 0;
+  margin-right: 35px;
+}
+
+li {
+  display: inline-block;
+  border: #313131 solid;
+  padding: 6px;
+  margin: 2px;
+}
+
+a:link {
+  color: #483bff;
+}
+
+a:visited {
+  color: #483bff;
+}
+
+h1 {
+  display: block;
+  text-align: center;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 40pt;
+  color: rgb(169, 94, 255);
+  line-height: 1.5;
+  text-shadow: 0.1px 8px 20px rgb(121, 121, 121);
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+article {
+  padding-bottom: 50px;
+}
+
+h2 {
+  color: white;
+  font-family: 'Orbitron', sans-serif;
+  text-shadow: 0.1px 8px 20px rgb(121, 121, 121);
+  text-align: center;
+  font-size: 35pt;
+}
+
+p {
+  font-size: 18pt;
+  color: rgb(243, 243, 243);
+  border: 10px solid #696969;
+  border-top-color: #a5a5a5;
+  border-bottom-color: #3f3f3f;
+  padding: 1em 1em;
+  margin: 20px;
+  box-shadow: 0.1px 0.1px 10px 0.1px rgba(180, 180, 180, 0.35);
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+footer {
+  background-color: rgb(36, 36, 36);
+  color: rgb(255, 255, 255);
+  padding: 30px;
+  height: 30px;
+  margin-top: auto;
+}
+
+@media (max-width: 1700px) {
+  .karvinen {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+  }
+}
+
+@media (max-width: 1270px) {
+  #kuvat {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      'garf1'
+      'garf2'
+      'garf3'
+      'garf4'
+      'garf5'
+      'garf6';
+  }
+
+  .karvinen {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+  }
+}
+
+@media (max-width: 810px) {
+  .chapters {
+    font-size: 9pt;
+  }
+  .karvinen {
+    max-width: 400px;
+    height: auto;
+  }
+}
+
+@media (max-width: 1400px) {
+  .chapters {
+    font-size: 18pt;
+  }
+}
+
+@media (max-width: 1190px) {
+  .chapters {
+    font-size: 16pt;
+  }
+}
+
+@media (max-width: 1080px) {
+  .chapters {
+    font-size: 14pt;
+  }
+}
+
+@media (max-width: 890px) {
+  h1 {
+    font-size: 35pt;
+  }
+  h2 {
+    font-size: 28pt;
+  }
+}
+
+@media (max-width: 760px) {
+  h1 {
+    font-size: 18pt;
+  }
+  h2 {
+    font-size: 14pt;
+  }
+  p {
+    font-size: 12pt;
+  }
+}
+
+@media (max-width: 600px) {
+  nav {
+    position: static;
+  }
+  li {
+    font-size: 10pt;
+  }
+
+  p {
+    font-size: 8pt;
+  }
+  .karvinen {
+    max-width: 160px;
+    height: auto;
+  }
+  .kuvateksti {
+    width: 12em;
+    margin-bottom: 4em;
+  }
+}

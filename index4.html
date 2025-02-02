@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Miskan mystinen webbisivu</title>
+    <meta name="description" content="Our first page" />
+    <meta name="keywords" content="html tutorial template" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style4.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <img id="bannerimage" src="../images/banner.png" alt="banner" />
+      <img id="pfp" src="../images/minaitse.png" alt="garf" />
+      <h1>Dokumentaatio</h1>
+    </header>
+
+    <nav>
+      <br />
+      <ul class="chapters">
+        <li id="etusivu"><a href="../index.html">Etusivu</a></li>
+        <li id="karvinen"><a href="../index2.html">Karvinen-galleria</a></li>
+        <li id="musakorneri"><a href="../index3.html">Musakorneri</a></li>
+        <li id="dokumentaatio"><a href="../index4.html">Dokumentaatio</a></li>
+        <li id="ylos"><a class="top" href="#">TAKAISIN YLÖS ↑</a></li>
+      </ul>
+    </nav>
+
+    <article>
+      <h2>Dokumentointia</h2>
+      <p>
+        Tekijän nimi: Miska Salonen <br />
+        Opiskelijanumero: AD1317<br />
+        Ryhmä: HTK22 <br /><br />
+
+        LOPPUTYÖN SPEKSIT <br />
+        Testatut selaimet: Firefox 122.0 ja Google Chrome 121.0.6167.85
+        <br /><br />
+        Kansiorakenne:
+        <br /><br />
+        Halusin pitää layoutin varsin yksinkertaisena. H1-toimii sivun otsikkona
+        ja saminen otsikko löytyy navigaatiomenusta. Poikkeuksena tähän on
+        etusivu, joka on löytyy nimellisesti navigaatiosta, mutta itse sivulle
+        mentäessä h1-otsikkona on kuitenkin sivuston nimi. H1:n yläpuolella on
+        banneri ja tämän keskelle asetettu oma pärstäni CSS:n avulla.
+        <br /><br />
+        Navigaatiossa sivujen linkit on simppelisti vierekkäin. Tarpeeksi
+        pienessä ikkunassa linkit asettuvat enempi päällekkäin. Normaalisti
+        navigaation tyyleissä position attribuutin arvo on "sticky", mutta kun
+        ikkuna on tarpeeksi pieni, tämä muuttuu arvoon "static". Halusin
+        alunperin tehdä navigaatiosta dropdown-menun mobiilinäkymää varten,
+        koska pienemmillä ruuduilla navigaatio peitti turhan ison osan ruudusta.
+        Valitsemallani ratkaisulla navigaatio jää ylös pienessä ikkunassa, eikä
+        tule tällöin tielle haittaamaan selaamista. Navigaation alla on
+        h2-otsikko, joka toimii pienenä deskriptiivisenä lisäyksenä tukemaan
+        sivun muuta sisältöä. Sivun keskellä on itse sisältö, joka sijoittuu
+        article-elementtiin, joka puolestaan sijoittuu body-elementtiin. Sivun
+        alaosasta löytyy yksinkertainen footer.
+        <br /><br />
+        Karvinen-galleriassa on itse piirtämiä kuvia Karvisesta. Jokaisella
+        kuvalla on oma kuvatekstilaatikkonsa. Kuvien asetteluun käytin gridiä,
+        koska halusin että ne pysyvät tasaisesti ruudukossa. Kokeilin asettelua
+        myös flexboxilla, mutta ikkunan koko muutettaessa kuvat asettuivat
+        jotenkin eriskummallisesti. Kun galleriassa ikkunaa pientää tarpeeksi,
+        kuvat asettuvat yhteen jonoon päällekkäin 2x6 ruudukon sijasta, eli
+        mobiilinäkymässäkin kuvat näkyvät mukavasti isoina.
+        <br /><br />
+        Musakornerissa asettelu pysyy kutakuinkin samana kuin galleriassa, mutta
+        tässä videot eivät näy vierekkäin. Gallerian tapaa, upotetuilla
+        videoilla on myös oma kuvaustekstinsä. Ikkunan koon pienentyessä
+        videosoittimien koko myöskin skaalautuu.
+      </p>
+    </article>
+    <footer>© Copyright by ⋆Miska⋆ | AD1317, HTK22 (TIKO), JAMK</footer>
+  </body>
+</html>
